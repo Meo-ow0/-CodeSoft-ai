@@ -1,15 +1,28 @@
-:root {
-    --bg-color: #FAF9F6;      /* Off-white background */
-    --primary: #D2B48C;       /* Tan/Latte accent */
-    --text-color: #4B3621;    /* Espresso brown text */
+body {
+    background-color: #f0fdf4; /* Very light green background */
+    font-family: sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
 }
 
-body { background-color: var(--bg-color); font-family: sans-serif; }
+.board {
+    display: grid;
+    grid-template-columns: repeat(3, 100px);
+    gap: 10px;
+}
 
-.chat-container { width: 400px; margin: 50px auto; border: 1px solid var(--primary); padding: 20px; border-radius: 10px; }
-
-#chat-window { height: 300px; overflow-y: scroll; margin-bottom: 10px; border-bottom: 1px solid #ccc; }
-
-input { width: 70%; padding: 8px; }
-
-button { padding: 8px; background-color: var(--primary); border: none; cursor: pointer; color: white; }
+.cell {
+    width: 100px;
+    height: 100px;
+    background-color: #ffffff; /* White cells */
+    border: 2px solid #22c55e; /* Green border */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem;
+    color: #166534; /* Dark green text */
+    cursor: pointer;
+    border-radius: 8px;
+}
