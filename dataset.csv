@@ -1,0 +1,6 @@
+def get_recommendations(title):
+    # Check if movie exists
+    if title not in df['title'].values:
+        return "I'm sorry, I don't have that movie in my records."
+    
+    # ... rest of your logic
