@@ -1,0 +1,15 @@
+:root {
+    --bg-color: #FAF9F6;      /* Off-white background */
+    --primary: #D2B48C;       /* Tan/Latte accent */
+    --text-color: #4B3621;    /* Espresso brown text */
+}
+
+body { background-color: var(--bg-color); font-family: sans-serif; }
+
+.chat-container { width: 400px; margin: 50px auto; border: 1px solid var(--primary); padding: 20px; border-radius: 10px; }
+
+#chat-window { height: 300px; overflow-y: scroll; margin-bottom: 10px; border-bottom: 1px solid #ccc; }
+
+input { width: 70%; padding: 8px; }
+
+button { padding: 8px; background-color: var(--primary); border: none; cursor: pointer; color: white; }
